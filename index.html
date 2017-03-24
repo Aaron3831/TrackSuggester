@@ -11,62 +11,103 @@
   <body>
     <div class="container">
       <h1>Which Programming Language is for me?</h1>
-      <form id="Suggester">
-        <!-- Type in your name here -->
-        <div class="form-group">
-          <label for="nameInput">Your Name</label>
-          <input type="name" class="form-control" id="nameInput" placeholder="Enter name">
+      <div class="row">
+        <div class="col-md-8">
+          <form id="Suggester">
+            <!-- Type in your name here -->
+            <div class="form-group">
+              <div class="jumbotron">
+                <label for="nameInput"><em>Your Name Here</em></label>
+                <input type="name" class="form-control" id="nameInput" placeholder="Enter name">
+              </div>
+            </div>
+            <!-- option 1 will branch to php and ruby, option 2 will branch to C# and java -->
+            <fieldset id="group1">
+              <legend>Pick which options apply to you</legend>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="group1" id="optionsRadios1" value="option1" checked>
+                  Would you prefer to work in a <span class ="italic">smaller</span> company?
+                </label>
+              </div>
+              <div class="form-check">
+              <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="group1" id="optionsRadios2" value="option2">
+                  Would you prefer to work in a <span class="underline">larger</span> company?
+                </label>
+              </div>
+            </fieldset>
+            <!-- option 3 can lead to php or C#. option 4 can lead to java or ruby -->
+            <fieldset id="group2">
+              <legend>Pick which options apply to you</legend>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="group2" id="optionsRadios3" value="option3">
+                  Do you like building <span class="italic">websites</span>?
+                </label>
+              </div>
+              <div class="form-check">
+              <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="group2" id="optionsRadios4" value="option4">
+                  Do you like building <span class="underline">applications</span>?
+                </label>
+              </div>
+            </fieldset>
+            <!-- option 5 will lead to java or php. option 6 can be ruby or C# -->
+            <fieldset id="group3">
+              <legend>Pick which options apply to you</legend>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="group3" id="optionsRadios5" value="option5">
+                  Do you like <span class="italic">content-management</span>?
+                </label>
+              </div>
+              <div class="form-check">
+              <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="group3" id="optionsRadios6" value="option6">
+                  Are you interested in <span class="underline">fast-paced</span> development?
+                </label>
+              </div>
+            </fieldset>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         </div>
-        <!-- option 1 will branch to php and ruby, option 2 will branch to C# and java -->
-        <fieldset id="group1">
-          <legend>Pick which options apply to you</legend>
-          <div class="form-check">
-            <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="group1" id="optionsRadios1" value="option1" checked>
-              Would you prefer to work in a <span class ="italic">smaller</span> company?
-            </label>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="container">
+            <form>
+              <div class="form-group row">
+                <label for="inputNameSubmit" class="col-sm-2 col-form-label">Name</label>
+                <div class="col-sm-10">
+                  <input type="NameSubmit" class="form-control" id="inputNameSubmit" placeholder="Name Here">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail" class="col-sm-2 col-form-label">Email Address</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Your Email Address">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-2">Subscribe</label>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox"> Receive emails from us about coding!
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="offset-sm-2 col-sm-10">
+                  <button type="submit" class="btn btn-primary">Sign me up!</button>
+                </div>
+              </div>
+            </form>
           </div>
-          <div class="form-check">
-          <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="group1" id="optionsRadios2" value="option2">
-              Would you prefer to work in a <span class="underline">larger</span> company?
-            </label>
-          </div>
-        </fieldset>
-        <!-- option 3 can lead to php or C#. option 4 can lead to java or ruby -->
-        <fieldset id="group2">
-          <legend>Pick which options apply to you</legend>
-          <div class="form-check">
-            <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="group2" id="optionsRadios3" value="option3">
-              Do you like building <span class="italic">websites</span>?
-            </label>
-          </div>
-          <div class="form-check">
-          <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="group2" id="optionsRadios4" value="option4">
-              Do you like building <span class="underline">applications</span>?
-            </label>
-          </div>
-        </fieldset>
-        <!-- option 5 will lead to java or php. option 6 can be ruby or C# -->
-        <fieldset id="group3">
-          <legend>Pick which options apply to you</legend>
-          <div class="form-check">
-            <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="group3" id="optionsRadios5" value="option5">
-              Do you like content-management?
-            </label>
-          </div>
-          <div class="form-check">
-          <label class="form-check-label">
-              <input type="radio" class="form-check-input" name="group3" id="optionsRadios6" value="option6">
-              Are you interested in fast-paced development?
-            </label>
-          </div>
-        </fieldset>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>

@@ -14,86 +14,91 @@
         <h1 class="jumbotron">Which Programming Language is for me?</h1>
         <div class="row">
           <div class="col-md-8">
-            <form id="Suggester">
-              <!-- Type in your name here -->
-              <div class="form-group">
-                <label for="nameInput"><em>Your Name Here</em></label>
-                <input type="name" class="form-control" id="nameInput" placeholder="Enter name">
+              <form id="Suggester">
+                <!-- Type in your name here -->
+                <div class="form-group">
+                  <label for="nameInput"><em>Your Name Here</em></label>
+                  <input type="name" class="form-control" id="nameInput" placeholder="Enter name">
+                </div>
+                <!-- option 1 will branch to php and ruby, option 2 will branch to C# and java -->
+                <fieldset id="group1">
+                  <legend>Pick which options apply to you</legend>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="group1" id="optionsRadios1" value="option1" checked>
+                      Would you prefer to work in a <span class ="italic">smaller</span> company?
+                    </label>
+                  </div>
+                  <div class="form-check">
+                  <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="group1" id="optionsRadios2" value="option2">
+                      Would you prefer to work in a <span class="underline">larger</span> company?
+                    </label>
+                  </div>
+                </fieldset>
+                <!-- option 3 can lead to php or C#. option 4 can lead to java or ruby -->
+                <fieldset id="group2">
+                  <legend>Pick which options apply to you</legend>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="group2" id="optionsRadios3" value="option3">
+                      Do you like building <span class="italic">websites</span>?
+                    </label>
+                  </div>
+                  <div class="form-check">
+                  <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="group2" id="optionsRadios4" value="option4">
+                      Do you like building <span class="underline">applications</span>?
+                    </label>
+                  </div>
+                </fieldset>
+                <!-- option 5 will lead to java or php. option 6 can be ruby or C# -->
+                <fieldset id="group3">
+                  <legend>Pick which options apply to you</legend>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="group3" id="optionsRadios5" value="option5">
+                      Do you like <span class="italic">content-management</span>?
+                    </label>
+                  </div>
+                  <div class="form-check">
+                  <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="group3" id="optionsRadios6" value="option6"> Are you interested in <span class="underline">fast-paced</span> development?
+                    </label>
+                  </div>
+                </fieldset>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+              <div id="hide">
+                <p>
+                  <h4>PHP</h4>
+                  PHP is most used in content-heavy websites with relatively little user interaction. The most popular content management systems - Wordpress, Drupal, and Joomla - are all written in PHP, and everything from local restaurants' websites up through large complex government deployments are built with these tools. If you're keen to work for an agency that builds websites for clients, or if you like the idea of building out sites for brands, businesses, and organizations, PHP is a great direction to go.
+                </p>
               </div>
-              <!-- option 1 will branch to php and ruby, option 2 will branch to C# and java -->
-              <fieldset id="group1">
-                <legend>Pick which options apply to you</legend>
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="group1" id="optionsRadios1" value="option1" checked>
-                    Would you prefer to work in a <span class ="italic">smaller</span> company?
-                  </label>
-                </div>
-                <div class="form-check">
-                <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="group1" id="optionsRadios2" value="option2">
-                    Would you prefer to work in a <span class="underline">larger</span> company?
-                  </label>
-                </div>
-              </fieldset>
-              <!-- option 3 can lead to php or C#. option 4 can lead to java or ruby -->
-              <fieldset id="group2">
-                <legend>Pick which options apply to you</legend>
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="group2" id="optionsRadios3" value="option3">
-                    Do you like building <span class="italic">websites</span>?
-                  </label>
-                </div>
-                <div class="form-check">
-                <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="group2" id="optionsRadios4" value="option4">
-                    Do you like building <span class="underline">applications</span>?
-                  </label>
-                </div>
-              </fieldset>
-              <!-- option 5 will lead to java or php. option 6 can be ruby or C# -->
-              <fieldset id="group3">
-                <legend>Pick which options apply to you</legend>
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="group3" id="optionsRadios5" value="option5">
-                    Do you like <span class="italic">content-management</span>?
-                  </label>
-                </div>
-                <div class="form-check">
-                <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="group3" id="optionsRadios6" value="option6">
-                    Are you interested in <span class="underline">fast-paced</span> development?
-                  </label>
-                </div>
-              </fieldset>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-            <div id="hide">
-              <p>
-                <h4>PHP</h4>
-                PHP is most used in content-heavy websites with relatively little user interaction. The most popular content management systems - Wordpress, Drupal, and Joomla - are all written in PHP, and everything from local restaurants' websites up through large complex government deployments are built with these tools. If you're keen to work for an agency that builds websites for clients, or if you like the idea of building out sites for brands, businesses, and organizations, PHP is a great direction to go.
-              </p>
+              <div id="hide2">
+                <p>
+                  <h4>Ruby</h4>
+                  Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.
+                </p>
+              </div>
+              <div id="hide3">
+                <p>
+                  <h4>Java</h4>
+                  Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.
+                </p>
+              </div>
+              <div id="hide4">
+                <p>
+                  <h4>C#</h4>
+                  C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.
+                </p>
+              </div>
             </div>
-            <div id="hide2">
-              <p>
-                <h4>Ruby</h4>
-                Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.
-              </p>
-            </div>
-            <div id="hide3">
-              <p>
-                <h4>Java</h4>
-                Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.
-              </p>
-            </div>
-            <div id="hide4">
-              <p>
-                <h4>C#</h4>
-                C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.
-              </p>
-            </div>
+            <div class="col-md-3">
+              <ul class="nav nav-pills nav-stacked listmargin">
+                <li role="presentation" class="active"><a href="https://aaron3831.github.io/TrackSuggester/">TrackSuggester</a></li>
+                <li role="presentation"><a href="https://aaron3831.github.io/independentprojectweek1/">Portfolio</a></li>
+              </ul>
             </div>
           </div>
         </div>

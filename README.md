@@ -10,7 +10,7 @@ _A website for curious potential coders that want to see what they would potenti
 
 ## Setup/Installation Requirements
 
-* _View the .html file in any modern browser:
+* View the .html file in any modern browser:
 
 https://aaron3831.github.io/TrackSuggester/
 

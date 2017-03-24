@@ -47,5 +47,13 @@ h1 {
   color: black;
   text-decoration:underline;
 }
+
+.formMargin {
+  margin-top: 40px;
+}
+
+ul {
+  display: none;
+}
 /*darkblue #0040a0*/
 /*lightblue #6dd3ff*/

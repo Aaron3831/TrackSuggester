@@ -36,4 +36,13 @@ $(document).ready(function(){
     };
     event.preventDefault();
   });
+  $("form#feedback").submit(function(event) {
+    var name = $("input#nameSubmit").val();
+    var email = $("input#inputEmail").val();
+    var text = $("input#textArea").val();
+
+    
+
+    event.preventDefault();
+  });
 });

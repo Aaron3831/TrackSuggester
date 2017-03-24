@@ -12,10 +12,12 @@
     <div class="container">
       <h1>Which Programming Language is for me?</h1>
       <form id="Suggester">
+        <!-- Type in your name here -->
         <div class="form-group">
           <label for="nameInput">Your Name</label>
           <input type="name" class="form-control" id="nameInput" placeholder="Enter name">
         </div>
+        <!-- option 1 will branch to php and ruby, option 2 will branch to C# and java -->
         <fieldset id="group1">
           <legend>Pick which options apply to you</legend>
           <div class="form-check">
@@ -31,6 +33,7 @@
             </label>
           </div>
         </fieldset>
+        <!-- option 3 can lead to php or C#. option 4 can lead to java or ruby -->
         <fieldset id="group2">
           <legend>Pick which options apply to you</legend>
           <div class="form-check">
@@ -46,18 +49,19 @@
             </label>
           </div>
         </fieldset>
+        <!-- option 5 will lead to java or php. option 6 can be ruby -->
         <fieldset id="group3">
           <legend>Pick which options apply to you</legend>
           <div class="form-check">
             <label class="form-check-label">
               <input type="radio" class="form-check-input" name="group3" id="optionsRadios5" value="option5">
-
+              Do you like content-management?
             </label>
           </div>
           <div class="form-check">
           <label class="form-check-label">
               <input type="radio" class="form-check-input" name="group3" id="optionsRadios6" value="option6">
-              Option two can be something else and selecting it will deselect option one
+              Are you interested in fast-paced development?
             </label>
           </div>
         </fieldset>

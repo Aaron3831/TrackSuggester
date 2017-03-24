@@ -16,13 +16,36 @@ label {
 }
 
 footer {
-  background:  linear-gradient(#0040a0, #6dd3ff);
+  background: linear-gradient(#6dd3ff, #0040a0, #6dd3ff);
 }
 
 body {
-  background-color: gray;
+  background-color: #6dd3ff;
   margin-top: 10%;
   margin-bottom: 10%;
+}
+.jumbotron {
+  background-image: url("https://assets.fastcompany.com/image/upload/w_596,q_auto,f_auto,fl_lossy/fc/3024661-inline-s-6-hacking-the-hack-school-and-making-it-work.jpg");
+  background-color: #17234E;
+  margin-bottom: 0;`enter code here`
+  min-height: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+legend {
+  color: white;
+}
+
+.row {
+  color: white;
+}
+
+h1 {
+  color: black;
+  text-decoration:underline;
 }
 /*darkblue #0040a0*/
 /*lightblue #6dd3ff*/

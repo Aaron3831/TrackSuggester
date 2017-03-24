@@ -10,6 +10,8 @@ $(document).ready(function(){
       if (group2 === 'option3' || 'option4') {
         if (group3 === 'option5') {
           alert('Hey ' + name + ' PHP sounds good!')
+
+          $("#hide").show();
         }
       }
     };
@@ -17,6 +19,8 @@ $(document).ready(function(){
       if (group2 === 'option3' || 'option4') {
         if (group3 === 'option6') {
           alert('Hey ' + name +  " Ruby might be what you're looking for!")
+
+          $("#hide2").show();
         }
       }
     };
@@ -24,6 +28,8 @@ $(document).ready(function(){
       if (group2 === 'option3' || 'option4') {
         if (group3 === 'option5') {
           alert('Hey ' + name +  " Java might be what you're looking for!")
+
+          $("#hide3").show();
         }
       }
     };
@@ -31,6 +37,8 @@ $(document).ready(function(){
       if (group2 === 'option3' || 'option4') {
         if (group3 === 'option6') {
           alert('Hey ' + name +  " C# sounds good!")
+
+          $("#hide4").show();
         }
       }
     };
@@ -45,7 +53,7 @@ $(document).ready(function(){
     $(".emailInput").text(email);
     $(".textGoesHere").text(text);
 
-    $("#hide").show();
+    $("#hide5").show();
 
     event.preventDefault();
   });

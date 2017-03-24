@@ -48,11 +48,36 @@ h1 {
   text-decoration:underline;
 }
 
+h3 {
+  color: white;
+}
+
 .formMargin {
   margin-top: 40px;
 }
 
 #hide {
+  display: none;
+}
+
+p {
+  display: none;
+  float: right;
+}
+
+#hide2 {
+  display: none;
+}
+
+#hide3 {
+  display: none;
+}
+
+#hide4 {
+  display: none;
+}
+
+#hide5 {
   display: none;
 }
 /*darkblue #0040a0*/

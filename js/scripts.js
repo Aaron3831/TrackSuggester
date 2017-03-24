@@ -37,11 +37,15 @@ $(document).ready(function(){
     event.preventDefault();
   });
   $("form#feedback").submit(function(event) {
-    var name = $("input#nameSubmit").val();
+    var name = $("input#inputNameSubmit").val();
     var email = $("input#inputEmail").val();
-    var text = $("input#textArea").val();
+    var text = document.getElementById("textArea").value;
 
-    
+    $(".nameSubmission").text(name);
+    $(".emailInput").text(email);
+    $(".textGoesHere").text(text);
+
+    $("#hide").show();
 
     event.preventDefault();
   });

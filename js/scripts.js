@@ -1,15 +1,15 @@
 $(document).ready(function(){
   $("form#Suggester").submit(function(event) {
-  event.preventDefault();
-    var option1 = $("input#optionsRadios1").val();
-    var option2 = $("input#optionsRadios2").val();
-    var option3 = $("input#optionsRadios3").val();
-    var option4 = $("input#optionsRadios4").val();
-    var option5 = $("input#optionsRadios5").val();
-    var option6 = $("input#optionsRadios6").val();
-    var option7 = $("input#optionsRadios7").val();
-    var option8 = $("input#optionsRadios8").val();
+    var group1 = $("input:radio[name=group1]:checked").val();
+    var group2 = $("input:radio[name=group2]:checked").val();
+    var group3 = $("input:radio[name=group3]:checked").val();
+    console.log();
 
-    if
+    // if (group1 ) {
+    //
+    // } else {
+    //   alert(C# might be a place to start!)
+    // }
+    event.preventDefault();
   });
 });

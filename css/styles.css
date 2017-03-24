@@ -5,3 +5,7 @@
 .underline {
   text-decoration: underline;
 }
+
+label {
+  font-size: 20px;
+}

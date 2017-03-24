@@ -80,5 +80,10 @@ p {
 #hide5 {
   display: none;
 }
+
+.sideMargin {
+  margin-left: 10%;
+  margin-right: 10%;
+}
 /*darkblue #0040a0*/
 /*lightblue #6dd3ff*/
